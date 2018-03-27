@@ -1,0 +1,40 @@
+{
+	"variables": {
+		"project_id": null,
+		"source_image": null,
+		"machine_type": "f1-micro",
+		"disk_size": "15",
+		"disk_type": "pd-standard",
+		"image_description": "field-app-image",
+		"image_family": "ubuntu-field-app",
+		"network": "default",
+		"tags": "field-server"
+
+	},
+	"builders": [
+		{
+			"type": "googlecompute",
+			"project_id": "{{user `project_id`}}",
+			"image_name": "field-base-{{timestamp}}",
+			"source_image": "{{user `source_image`}}",
+			"zone": "europe-west4-b",
+			"ssh_username": "root",
+			"machine_type": "{{user `machine_type`}}",
+			"disk_size": "{{user `disk_size`}}",
+                        "disk_type": "{{user `disk_type`}}",
+			"image_description": "{{user `image_description`}}",
+			"image_family": "{{user `image_family`}}",
+			"network": "{{user `network`}}",
+			"tags": "{{user `tags`}}"
+			
+		}
+	],
+	"provisioners": [
+                {
+                        "type": "shell",
+                        "script": "scripts/install_nginx.sh"
+                }
+        ]
+
+
+}

@@ -1,0 +1,7 @@
+.terraform
+account.json
+account.json.1716
+*.tfstate
+*.tfstate.*
+*.old*
+vars.json

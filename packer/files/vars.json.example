@@ -1,0 +1,11 @@
+{
+	"project_id": "project-id",
+	"source_image": "ubuntu-1604-xenial-v20180306",
+	"machine_type": "f1-micro",
+	"disk_size": "10",
+	"disk_type": "pd-standard",
+	"image_description": "field-app-image",
+	"image_family": "field-app-base",
+	"network": "default",
+	"tags": "field-server"
+}
