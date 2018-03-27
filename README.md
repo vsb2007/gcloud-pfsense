@@ -28,4 +28,4 @@ export GOOGLE_CREDENTIALS=$(cat account.json)
 ### Install packer and terraform for your OS
 ### Change settings for packer and terraform
 ### Create test image by packer
-### Create `pfsense` image like Whis(https://blog.kylemanna.com/cloud/pfsense-on-google-cloud/)
+### Create `pfsense` image like [Whis](https://blog.kylemanna.com/cloud/pfsense-on-google-cloud/)
