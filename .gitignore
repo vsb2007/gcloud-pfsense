@@ -5,3 +5,4 @@ account.json.1716
 *.tfstate.*
 *.old*
 vars.json
+variables.tf2
