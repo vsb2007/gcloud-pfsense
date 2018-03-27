@@ -1,0 +1,14 @@
+variable project {
+  description = "Project ID"
+  default = "project-id"
+}
+
+variable region {
+  description = "Region"
+  default     = "europe-west4"
+}
+
+variable disk_image {
+  description = "Disk image"
+  default     = "ubuntu-1604-lts"
+}
