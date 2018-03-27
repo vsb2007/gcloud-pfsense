@@ -12,8 +12,7 @@
 
 # Install Terraform
 ```wget https://releases.hashicorp.com/terraform/0.11.4/terraform_0.11.4_linux_amd64.zip```
-
-# unzip to /usr/bin
+### unzip to /usr/bin
 
 # gcloud init
 ```
@@ -29,3 +28,4 @@ export GOOGLE_CREDENTIALS=$(cat account.json)
 ### Change settings for packer and terraform
 ### Create test image by packer
 ### Create `pfsense` image like [Whis](https://blog.kylemanna.com/cloud/pfsense-on-google-cloud/)
+
